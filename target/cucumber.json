@@ -1,0 +1,207 @@
+[
+  {
+    "line": 2,
+    "elements": [
+      {
+        "start_timestamp": "2022-06-27T04:12:10.462Z",
+        "before": [
+          {
+            "result": {
+              "duration": 4000000,
+              "status": "passed"
+            },
+            "match": {
+              "location": "Parallel.ApplicationHooks.getProperty()"
+            }
+          },
+          {
+            "result": {
+              "duration": 6005000000,
+              "status": "passed"
+            },
+            "match": {
+              "location": "Parallel.ApplicationHooks.launchBrowser()"
+            }
+          }
+        ],
+        "line": 5,
+        "name": "Checking status code",
+        "description": "",
+        "id": "testing-status-code-and-load-time-and-login-failure;checking-status-code",
+        "after": [
+          {
+            "result": {
+              "duration": 625000000,
+              "status": "passed"
+            },
+            "match": {
+              "location": "Parallel.ApplicationHooks.quitBrowser()"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 26187000000,
+              "status": "passed"
+            },
+            "line": 6,
+            "name": "navigate to url and get response status code",
+            "match": {
+              "location": "Parallel.TestCase.navigate_to_url_and_get_response_status_code()"
+            },
+            "keyword": "Given "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@TestCase"
+          },
+          {
+            "name": "@Status_Code"
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2022-06-27T04:12:43.373Z",
+        "before": [
+          {
+            "result": {
+              "status": "passed"
+            },
+            "match": {
+              "location": "Parallel.ApplicationHooks.getProperty()"
+            }
+          },
+          {
+            "result": {
+              "duration": 1290000000,
+              "status": "passed"
+            },
+            "match": {
+              "location": "Parallel.ApplicationHooks.launchBrowser()"
+            }
+          }
+        ],
+        "line": 9,
+        "name": "Checking load time",
+        "description": "",
+        "id": "testing-status-code-and-load-time-and-login-failure;checking-load-time",
+        "after": [
+          {
+            "result": {
+              "duration": 602000000,
+              "status": "passed"
+            },
+            "match": {
+              "location": "Parallel.ApplicationHooks.quitBrowser()"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 32503000000,
+              "status": "passed"
+            },
+            "line": 10,
+            "name": "navigate to url and get load time",
+            "match": {
+              "location": "Parallel.TestCase.navigate_to_url_and_get_load_time()"
+            },
+            "keyword": "Given "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@TestCase"
+          },
+          {
+            "name": "@Load_Time"
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2022-06-27T04:13:17.777Z",
+        "before": [
+          {
+            "result": {
+              "duration": 1000000,
+              "status": "passed"
+            },
+            "match": {
+              "location": "Parallel.ApplicationHooks.getProperty()"
+            }
+          },
+          {
+            "result": {
+              "duration": 1239000000,
+              "status": "passed"
+            },
+            "match": {
+              "location": "Parallel.ApplicationHooks.launchBrowser()"
+            }
+          }
+        ],
+        "line": 13,
+        "name": "Checking the login functionality",
+        "description": "",
+        "id": "testing-status-code-and-load-time-and-login-failure;checking-the-login-functionality",
+        "after": [
+          {
+            "result": {
+              "duration": 604000000,
+              "status": "passed"
+            },
+            "match": {
+              "location": "Parallel.ApplicationHooks.quitBrowser()"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 20828000000,
+              "status": "passed"
+            },
+            "line": 14,
+            "name": "navigate to url and check login functionality",
+            "match": {
+              "location": "Parallel.TestCase.navigate_to_url_and_check_login_functionality()"
+            },
+            "keyword": "Given "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@TestCase"
+          },
+          {
+            "name": "@Login_Checker"
+          }
+        ]
+      }
+    ],
+    "name": "Testing status code and load time and login failure",
+    "description": "",
+    "id": "testing-status-code-and-load-time-and-login-failure",
+    "keyword": "Feature",
+    "uri": "file:src/test/resources/Parallel/TestCase.feature",
+    "tags": [
+      {
+        "name": "@TestCase",
+        "type": "Tag",
+        "location": {
+          "line": 1,
+          "column": 1
+        }
+      }
+    ]
+  }
+]
