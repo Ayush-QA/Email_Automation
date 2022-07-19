@@ -12,3 +12,7 @@ Feature: Testing status code and load time and login failure
   @Login_Checker
   Scenario: Checking the login functionality
     Given navigate to url and check login functionality
+
+  @Content_Checker
+  Scenario: Checking the home page content after login success
+    Given navigate to url and login and check home page content

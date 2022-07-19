@@ -7,14 +7,12 @@ import org.apache.commons.mail.Email;
 import org.apache.commons.mail.SimpleEmail;
 import org.json.simple.JSONArray;
 import org.json.simple.JSONObject;
-import org.openqa.selenium.WebDriver;
 import factory.DriverFactory;
 import io.cucumber.java.en.Given;
 import pages.Urls_Page;
 import util.JSONFileClass;
 
 public class TestCase {
-	WebDriver driver;
 	Urls_Page url;
 	JSONFileClass file;
 	JSONObject user;
@@ -48,7 +46,7 @@ public class TestCase {
 				email.setFrom("aayush.qa.test@gmail.com");
 				email.setSubject("Invalid Status Code");
 				email.setMsg("Status code of " + details.get("url") + " is : " + status_code);
-				email.addTo("ronychaturvedi1991@gmail.com");
+				email.addTo("harishkahol@gmail.com");
 				email.send();
 			}
 
@@ -80,7 +78,7 @@ public class TestCase {
 				email.setFrom("aayush.qa.test@gmail.com");
 				email.setSubject("Invalid load time");
 				email.setMsg("Load time of " + details.get("url") + " is : " + totalTime + " secs.");
-				email.addTo("ronychaturvedi1991@gmail.com");
+				email.addTo("harishkahol@gmail.com");
 				email.send();
 			} else {
 				System.out.println("Load time " + totalTime + " secs is valid.");
@@ -105,9 +103,7 @@ public class TestCase {
 			url.clickOnSignIn();
 			Thread.sleep(4000);
 			String dashboard_Url = (String) details.get("dashboard");
-			System.out.println(dashboard_Url);
 			String actual_Url = DriverFactory.getDriver().getCurrentUrl();
-			System.out.println(actual_Url);
 			if (dashboard_Url.equalsIgnoreCase(actual_Url)) {
 				System.out.println("Login success.");
 
@@ -121,7 +117,41 @@ public class TestCase {
 				email.setFrom("aayush.qa.test@gmail.com");
 				email.setSubject("Login failure");
 				email.setMsg("Login attempt of " + details.get("url") + " is failed.");
-				email.addTo("ronychaturvedi1991@gmail.com");
+				email.addTo("harishkahol@gmail.com");
+				email.send();
+			}
+
+		}
+	}
+
+	@Given("^navigate to url and login and check home page content$")
+	public void navigate_to_url_and_login_and_check_home_page_content() throws Exception {
+		url = new Urls_Page(DriverFactory.getDriver());
+		file = new JSONFileClass();
+		user = file.readJson();
+		JSONArray dataArray = (JSONArray) user.get("Credential");
+
+		for (int i = 0; i < dataArray.size(); i++) {
+			JSONObject details = (JSONObject) dataArray.get(i);
+			url.getUrl((String) details.get("url"));
+			url.enterUserName((String) details.get("username"));
+			url.enterPassword((String) details.get("password"));
+			url.clickOnSignIn();
+			url.waitForPageLoading();
+			String text = "Lusher1234";
+			if (DriverFactory.getDriver().getPageSource().contains(text)) {
+				System.out.println("Text is present.");
+			} else {
+				System.out.println("Text is not present.");
+				Email email = new SimpleEmail();
+				email.setHostName("smtp.gmail.com");
+				email.setSmtpPort(587);
+				email.setAuthenticator(new DefaultAuthenticator("aayush.qa.test@gmail.com", "smnpilbfviddnfmo"));
+				email.setSSLOnConnect(true);
+				email.setFrom("aayush.qa.test@gmail.com");
+				email.setSubject("Content checker");
+				email.setMsg("Provided text is : " + text + " which is not present.");
+				email.addTo("harishkahol@gmail.com");
 				email.send();
 			}
 

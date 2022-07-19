@@ -1,24 +1,24 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results skipped="0" failed="0" ignored="0" total="3" passed="3">
+<testng-results skipped="0" failed="0" ignored="0" total="1" passed="1">
   <reporter-output>
   </reporter-output>
-  <suite name="Surefire suite" duration-ms="94805" started-at="2022-06-27T04:12:09Z" finished-at="2022-06-27T04:13:44Z">
+  <suite name="Surefire suite" duration-ms="16308" started-at="2022-07-19T11:37:25Z" finished-at="2022-07-19T11:37:41Z">
     <groups>
       <group name="cucumber">
         <method signature="AbstractTestNGCucumberTests.runScenario(io.cucumber.testng.PickleWrapper, io.cucumber.testng.FeatureWrapper)[pri:0, instance:Parallel.ParallelRun@f6c48ac]" name="runScenario" class="io.cucumber.testng.AbstractTestNGCucumberTests"/>
       </group> <!-- cucumber -->
     </groups>
-    <test name="Surefire test" duration-ms="94805" started-at="2022-06-27T04:12:09Z" finished-at="2022-06-27T04:13:44Z">
+    <test name="Surefire test" duration-ms="16308" started-at="2022-07-19T11:37:25Z" finished-at="2022-07-19T11:37:41Z">
       <class name="Parallel.ParallelRun">
-        <test-method status="PASS" signature="setUpClass()[pri:0, instance:Parallel.ParallelRun@f6c48ac]" name="setUpClass" is-config="true" duration-ms="886" started-at="2022-06-27T04:12:09Z" finished-at="2022-06-27T04:12:10Z">
+        <test-method status="PASS" signature="setUpClass()[pri:0, instance:Parallel.ParallelRun@f6c48ac]" name="setUpClass" is-config="true" duration-ms="1062" started-at="2022-07-19T11:37:25Z" finished-at="2022-07-19T11:37:26Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUpClass -->
-        <test-method status="PASS" signature="runScenario(io.cucumber.testng.PickleWrapper, io.cucumber.testng.FeatureWrapper)[pri:0, instance:Parallel.ParallelRun@f6c48ac]" name="runScenario" duration-ms="33048" started-at="2022-06-27T04:12:10Z" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2022-06-27T04:12:43Z">
+        <test-method status="PASS" signature="runScenario(io.cucumber.testng.PickleWrapper, io.cucumber.testng.FeatureWrapper)[pri:0, instance:Parallel.ParallelRun@f6c48ac]" name="runScenario" duration-ms="10377" started-at="2022-07-19T11:37:26Z" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2022-07-19T11:37:37Z">
           <params>
             <param index="0">
               <value>
-                <![CDATA["Checking status code"]]>
+                <![CDATA["Checking the home page content after login success"]]>
               </value>
             </param>
             <param index="1">
@@ -30,39 +30,7 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- runScenario -->
-        <test-method status="PASS" signature="runScenario(io.cucumber.testng.PickleWrapper, io.cucumber.testng.FeatureWrapper)[pri:0, instance:Parallel.ParallelRun@f6c48ac]" name="runScenario" duration-ms="34407" started-at="2022-06-27T04:12:43Z" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2022-06-27T04:13:17Z">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA["Checking load time"]]>
-              </value>
-            </param>
-            <param index="1">
-              <value>
-                <![CDATA["Optional[Testing status code and load time and login failure]"]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- runScenario -->
-        <test-method status="PASS" signature="runScenario(io.cucumber.testng.PickleWrapper, io.cucumber.testng.FeatureWrapper)[pri:0, instance:Parallel.ParallelRun@f6c48ac]" name="runScenario" duration-ms="22679" started-at="2022-06-27T04:13:17Z" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2022-06-27T04:13:40Z">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA["Checking the login functionality"]]>
-              </value>
-            </param>
-            <param index="1">
-              <value>
-                <![CDATA["Optional[Testing status code and load time and login failure]"]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- runScenario -->
-        <test-method status="PASS" signature="tearDownClass()[pri:0, instance:Parallel.ParallelRun@f6c48ac]" name="tearDownClass" is-config="true" duration-ms="3755" started-at="2022-06-27T04:13:40Z" finished-at="2022-06-27T04:13:44Z">
+        <test-method status="PASS" signature="tearDownClass()[pri:0, instance:Parallel.ParallelRun@f6c48ac]" name="tearDownClass" is-config="true" duration-ms="4831" started-at="2022-07-19T11:37:37Z" finished-at="2022-07-19T11:37:41Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDownClass -->

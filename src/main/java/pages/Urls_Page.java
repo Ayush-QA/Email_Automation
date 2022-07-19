@@ -16,6 +16,9 @@ public class Urls_Page {
 	@FindBy(xpath = "//button[@class='btn']")
 	WebElement signIn;
 
+	@FindBy(xpath = "//span[normalize-space()='Projects']")
+	WebElement project_btn;
+
 	WebDriver driver;
 	WebDriverUtil util;
 
@@ -46,4 +49,10 @@ public class Urls_Page {
 		util.waitForElementToBeClickable(signIn);
 		util.waitForElementJavaScript(signIn);
 	}
+
+	public void waitForPageLoading() throws InterruptedException {
+		util = new WebDriverUtil();
+		util.waitForElementToBeClickable(project_btn);
+	}
+
 }

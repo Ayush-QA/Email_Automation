@@ -9,7 +9,7 @@ import com.paulhammant.ngwebdriver.NgWebDriver;
 public class WebDriverUtil {
 
 	public void waitForElementToBeClickable(WebElement element) {
-		WebDriverWait wait = new WebDriverWait(DriverFactory.getDriver(), 60);
+		WebDriverWait wait = new WebDriverWait(DriverFactory.getDriver(), 10);
 		wait.until(ExpectedConditions.elementToBeClickable(element));
 	}
 

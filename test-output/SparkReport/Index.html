@@ -35,7 +35,7 @@
 <a href="#"><span class="badge badge-primary">Grasshopper Report</span></a>
 </li>
 <li class="m-r-10">
-<a href="#"><span class="badge badge-primary">Jun 27, 2022 09:42:09 AM</span></a>
+<a href="#"><span class="badge badge-primary">Jul 19, 2022 05:07:25 PM</span></a>
 </li>
 </ul>
 </div>
@@ -66,13 +66,13 @@
 <div class="col-md-3">
 <div class="card"><div class="card-body">
 <p class="m-b-0">Started</p>
-<h3>Jun 27, 2022 09:42:09 AM</h3>
+<h3>Jul 19, 2022 05:07:25 PM</h3>
 </div></div>
 </div>
 <div class="col-md-3">
 <div class="card"><div class="card-body">
 <p class="m-b-0">Ended</p>
-<h3>Jun 27, 2022 09:43:40 AM</h3>
+<h3>Jul 19, 2022 05:07:37 PM</h3>
 </div></div>
 </div>
 <div class="col-md-3">
@@ -123,7 +123,7 @@
 </div>
 </div>
 <div class="card-footer">
-<div><small data-tooltip='100%'><b>3</b> scenarios passed</small></div>
+<div><small data-tooltip='100%'><b>1</b> scenarios passed</small></div>
 <div>
 <small data-tooltip='0%'><b>0</b> scenarios failed,
 <b>0</b> skipped, <b data-tooltip='%'>0</b> others
@@ -143,7 +143,7 @@
 </div>
 </div>
 <div class="card-footer">
-<div><small data-tooltip='100%'><b>3</b> steps passed</small></div>
+<div><small data-tooltip='100%'><b>1</b> steps passed</small></div>
 <div>
 <small data-tooltip='0%'><b>0</b> steps failed,
 <b>0</b> skipped, <b data-tooltip='%'>0</b> others
@@ -162,7 +162,7 @@
 </div></div>
 <script>
 var timeline = {
-"Testing status code and load time and login failure":89.938
+"Testing status code and load time and login failure":10.123
 };
 </script>
 <div class="row">
@@ -172,31 +172,15 @@ var timeline = {
 <div class="card-body pb-0 pt-0"><table class="table table-sm table-bordered">
 <thead><tr class="bg-gray"><th>Name</th><th>Passed</th><th>Failed</th><th>Skipped</th><th>Others</th><th>Passed %</th></tr></thead><tbody>
 <tr>
+<td>@Content_Checker</td>
+<td>1</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>100%</td>
+</tr>
+<tr>
 <td>@TestCase</td>
-<td>3</td>
-<td>0</td>
-<td>0</td>
-<td>0</td>
-<td>100%</td>
-</tr>
-<tr>
-<td>@Login_Checker</td>
-<td>1</td>
-<td>0</td>
-<td>0</td>
-<td>0</td>
-<td>100%</td>
-</tr>
-<tr>
-<td>@Status_Code</td>
-<td>1</td>
-<td>0</td>
-<td>0</td>
-<td>0</td>
-<td>100%</td>
-</tr>
-<tr>
-<td>@Load_Time</td>
 <td>1</td>
 <td>0</td>
 <td>0</td>
@@ -247,13 +231,13 @@ failParent: 0,
 warningParent: 0,
 skipParent: 0,
 childCount: 5,
-passChild: 3,
+passChild: 1,
 failChild: 0,
 warningChild: 0,
 skipChild: 0,
 infoChild: 0,
 grandChildCount: 5,
-passGrandChild: 3,
+passGrandChild: 1,
 failGrandChild: 0,
 warningGrandChild: 0,
 skipGrandChild: 0,
@@ -278,7 +262,7 @@ eventsCount: 5,
 <li class="dropdown">
 <a href="#" class="dropdown-toggle" data-toggle="dropdown"><i class="fa fa-tag"></i></a>
 <ul id="tag-toggle" class="dropdown-menu dropdown-md p-v-0">
-<a class="dropdown-item" href="#">@TestCase</a><a class="dropdown-item" href="#">@Login_Checker</a><a class="dropdown-item" href="#">@Status_Code</a><a class="dropdown-item" href="#">@Load_Time</a>
+<a class="dropdown-item" href="#">@Content_Checker</a><a class="dropdown-item" href="#">@TestCase</a>
 </ul>
 </li>
 </ul>
@@ -291,7 +275,7 @@ eventsCount: 5,
           <div class="test-detail">
             <p class="name">Testing status code and load time and login failure</p>
             <p class="text-sm">
-              <span>09:42:10 AM</span> / <span>00:01:29:938</span>
+              <span>17:07:26 PM</span> / <span>00:00:10:123</span>
               <span class="badge pass-bg log float-right">Pass</span>
             </p>
           </div>
@@ -300,9 +284,9 @@ eventsCount: 5,
 <div class="p-v-10">
 <div class="info">
 <h5 class="test-status text-pass">Testing status code and load time and login failure</h5>
-<span class='badge badge-success'>06.27.2022 09:42:10</span>
-<span class='badge badge-danger'>06.27.2022 09:43:40</span>
-<span class='badge badge-default'>00:01:29:938</span>
+<span class='badge badge-success'>07.19.2022 17:07:26</span>
+<span class='badge badge-danger'>07.19.2022 17:07:37</span>
+<span class='badge badge-default'>00:00:10:123</span>
 &middot; <span class='uri-anchor badge badge-default'>#test-id=1</span>
 </div>
 <div class="m-t-10 m-l-5"></div>
@@ -312,45 +296,13 @@ eventsCount: 5,
   <div class="card">
     <div class="card-header" role="tab">
       <div class="card-title">
-        <div class="node" id="2"><span class="badge log pass-bg mr-2">Pass</span>Checking status code</div>
+        <div class="node" id="2"><span class="badge log pass-bg mr-2">Pass</span>Checking the home page content after login success</div>
       </div>
     </div>
         <div class="collapse">
           <div class="card-body">
-              <div class="step pass-bg" title="Parallel.TestCase.navigate_to_url_and_get_response_status_code()">
-                <span>Given navigate to url and get response status code</span>
-      <div>
-      </div>
-              </div>
-          </div>
-        </div>
-  </div>
-  <div class="card">
-    <div class="card-header" role="tab">
-      <div class="card-title">
-        <div class="node" id="7"><span class="badge log pass-bg mr-2">Pass</span>Checking load time</div>
-      </div>
-    </div>
-        <div class="collapse">
-          <div class="card-body">
-              <div class="step pass-bg" title="Parallel.TestCase.navigate_to_url_and_get_load_time()">
-                <span>Given navigate to url and get load time</span>
-      <div>
-      </div>
-              </div>
-          </div>
-        </div>
-  </div>
-  <div class="card">
-    <div class="card-header" role="tab">
-      <div class="card-title">
-        <div class="node" id="12"><span class="badge log pass-bg mr-2">Pass</span>Checking the login functionality</div>
-      </div>
-    </div>
-        <div class="collapse">
-          <div class="card-body">
-              <div class="step pass-bg" title="Parallel.TestCase.navigate_to_url_and_check_login_functionality()">
-                <span>Given navigate to url and check login functionality</span>
+              <div class="step pass-bg" title="Parallel.TestCase.navigate_to_url_and_login_and_check_home_page_content()">
+                <span>Given navigate to url and login and check home page content</span>
       <div>
       </div>
               </div>
@@ -373,77 +325,57 @@ eventsCount: 5,
 <div class="test-list">
 <div class="test-list-tools">
 <ul class="tools pull-left"><li><a href=""><span class="font-size-14">Category</span></a></li></ul>
-<ul class="tools text-right"><li><a href="#"><span class="badge badge-primary">4</span></a></li></ul>
+<ul class="tools text-right"><li><a href="#"><span class="badge badge-primary">2</span></a></li></ul>
 </div>
 <div class="test-list-wrapper scrollable">
 <ul class="test-list-item">
 <li class="test-item">
 <div class="test-detail">
 <span class="meta">
-<span class='badge log pass-bg'>3</span>
+<span class='badge log pass-bg'>1</span>
+</span>
+<p class="name">@Content_Checker</p>
+<p class="duration text-sm">1 tests</p>
+</div>
+<div class="test-contents d-none">
+<div class="info">
+<h4>@Content_Checker</h4>
+<span status="pass" class='badge log pass-bg'>1 passed</span>
+</div>
+<table class='table table-sm mt-4'>
+<thead>
+<tr>
+<th class="status-col">Status</th>
+<th class="timestamp-col">Timestamp</th>
+<th>TestName</th>
+</tr>
+</thead>
+<tbody>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>17:07:26 PM</td>
+<td>
+<a href="#" class="linked" test-id='1' id='2'>Checking the home page content after login success</a>
+<div class="">
+<span class="badge badge-default">Testing status code and load time and login failure.Checking the home page content after login success</span>
+</div>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+</li>
+<li class="test-item">
+<div class="test-detail">
+<span class="meta">
+<span class='badge log pass-bg'>1</span>
 </span>
 <p class="name">@TestCase</p>
-<p class="duration text-sm">3 tests</p>
+<p class="duration text-sm">1 tests</p>
 </div>
 <div class="test-contents d-none">
 <div class="info">
 <h4>@TestCase</h4>
-<span status="pass" class='badge log pass-bg'>3 passed</span>
-</div>
-<table class='table table-sm mt-4'>
-<thead>
-<tr>
-<th class="status-col">Status</th>
-<th class="timestamp-col">Timestamp</th>
-<th>TestName</th>
-</tr>
-</thead>
-<tbody>
-<tr class="tag-test-status" status="pass">
-<td><span class="badge log pass-bg">Pass</span></td>
-<td>09:42:10 AM</td>
-<td>
-<a href="#" class="linked" test-id='1' id='2'>Checking status code</a>
-<div class="">
-<span class="badge badge-default">Testing status code and load time and login failure.Checking status code</span>
-</div>
-</td>
-</tr>
-<tr class="tag-test-status" status="pass">
-<td><span class="badge log pass-bg">Pass</span></td>
-<td>09:42:43 AM</td>
-<td>
-<a href="#" class="linked" test-id='1' id='7'>Checking load time</a>
-<div class="">
-<span class="badge badge-default">Testing status code and load time and login failure.Checking load time</span>
-</div>
-</td>
-</tr>
-<tr class="tag-test-status" status="pass">
-<td><span class="badge log pass-bg">Pass</span></td>
-<td>09:43:17 AM</td>
-<td>
-<a href="#" class="linked" test-id='1' id='12'>Checking the login functionality</a>
-<div class="">
-<span class="badge badge-default">Testing status code and load time and login failure.Checking the login functionality</span>
-</div>
-</td>
-</tr>
-</tbody>
-</table>
-</div>
-</li>
-<li class="test-item">
-<div class="test-detail">
-<span class="meta">
-<span class='badge log pass-bg'>1</span>
-</span>
-<p class="name">@Login_Checker</p>
-<p class="duration text-sm">1 tests</p>
-</div>
-<div class="test-contents d-none">
-<div class="info">
-<h4>@Login_Checker</h4>
 <span status="pass" class='badge log pass-bg'>1 passed</span>
 </div>
 <table class='table table-sm mt-4'>
@@ -457,83 +389,11 @@ eventsCount: 5,
 <tbody>
 <tr class="tag-test-status" status="pass">
 <td><span class="badge log pass-bg">Pass</span></td>
-<td>09:43:17 AM</td>
+<td>17:07:26 PM</td>
 <td>
-<a href="#" class="linked" test-id='1' id='12'>Checking the login functionality</a>
+<a href="#" class="linked" test-id='1' id='2'>Checking the home page content after login success</a>
 <div class="">
-<span class="badge badge-default">Testing status code and load time and login failure.Checking the login functionality</span>
-</div>
-</td>
-</tr>
-</tbody>
-</table>
-</div>
-</li>
-<li class="test-item">
-<div class="test-detail">
-<span class="meta">
-<span class='badge log pass-bg'>1</span>
-</span>
-<p class="name">@Status_Code</p>
-<p class="duration text-sm">1 tests</p>
-</div>
-<div class="test-contents d-none">
-<div class="info">
-<h4>@Status_Code</h4>
-<span status="pass" class='badge log pass-bg'>1 passed</span>
-</div>
-<table class='table table-sm mt-4'>
-<thead>
-<tr>
-<th class="status-col">Status</th>
-<th class="timestamp-col">Timestamp</th>
-<th>TestName</th>
-</tr>
-</thead>
-<tbody>
-<tr class="tag-test-status" status="pass">
-<td><span class="badge log pass-bg">Pass</span></td>
-<td>09:42:10 AM</td>
-<td>
-<a href="#" class="linked" test-id='1' id='2'>Checking status code</a>
-<div class="">
-<span class="badge badge-default">Testing status code and load time and login failure.Checking status code</span>
-</div>
-</td>
-</tr>
-</tbody>
-</table>
-</div>
-</li>
-<li class="test-item">
-<div class="test-detail">
-<span class="meta">
-<span class='badge log pass-bg'>1</span>
-</span>
-<p class="name">@Load_Time</p>
-<p class="duration text-sm">1 tests</p>
-</div>
-<div class="test-contents d-none">
-<div class="info">
-<h4>@Load_Time</h4>
-<span status="pass" class='badge log pass-bg'>1 passed</span>
-</div>
-<table class='table table-sm mt-4'>
-<thead>
-<tr>
-<th class="status-col">Status</th>
-<th class="timestamp-col">Timestamp</th>
-<th>TestName</th>
-</tr>
-</thead>
-<tbody>
-<tr class="tag-test-status" status="pass">
-<td><span class="badge log pass-bg">Pass</span></td>
-<td>09:42:43 AM</td>
-<td>
-<a href="#" class="linked" test-id='1' id='7'>Checking load time</a>
-<div class="">
-<span class="badge badge-default">Testing status code and load time and login failure.Checking load time</span>
+<span class="badge badge-default">Testing status code and load time and login failure.Checking the home page content after login success</span>
 </div>
 </td>
 </tr>

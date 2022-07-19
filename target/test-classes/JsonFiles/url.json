@@ -11,5 +11,12 @@
 			"password": "1010101",
 			"dashboard": "https://play.lusher.io/dashboard"
 		}
+	],
+	"Credential": [
+		{
+			"url": "https://play.lusher.io/auth/signin",
+			"username": "aayush.qa.test+lusherapi@gmail.com",
+			"password": "10101010"
+		}
 	]
 }
